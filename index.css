@@ -278,8 +278,10 @@ header {
 
 .tooltipMateus {
   position: relative;
-  display: inline-block;
+  display: inline-flexbox;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .tooltipMateus .tooltiptextMaffi {
@@ -292,7 +294,7 @@ header {
   padding: 5px 0;
   position: relative;
   z-index: 1;
-  left: 23.50%;
+  left: 35%;
   opacity: 0;
   transition: opacity 0.3s;
 }
