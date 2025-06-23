@@ -248,7 +248,7 @@ header {
     color: white;
     justify-content: center;
     padding: 2rem;
-    flex-direction: column;
+    flex-direction: column
 }
 .sectionParceiros h1{
     display: flex;
