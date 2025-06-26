@@ -11,9 +11,11 @@ body {
 }
 
 .LogoLipe {
-    height: 45px;
+    height: 140px;
     cursor: pointer;
     transition: all 0.8s ease;
+    left: 10em;
+    /* position: absolute; */
 }
 
 .LogoLipe:hover {
@@ -385,7 +387,7 @@ header {
 .especialidades_box h1{
 
    
-    color: greenyellow;
+    color: #f3f3f5;
     
 }
 
@@ -439,17 +441,17 @@ header {
     border-radius: 2rem;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 10px 10px greenyellow;
+    box-shadow: 10px 10px 10px #f4f4f2;
   }
   
   .flip-card-front {
-    background: linear-gradient(120deg, purple 40%, #363636 88%,
+    background: linear-gradient(120deg, purple 40%, #363650 88%,
        rgb(255, 211, 195) 40%, #363636 48%);
     color: white;
   }
   
   .flip-card-back {
-    background: linear-gradient(120deg, rgb(15, 19, 233) 10%, purple 88%,
+    background: linear-gradient(120deg, rgb(15, 19, 233) 95%, purple 88%,
        bisque 40%, purple 78%);
     color: white;
     transform: rotateY(180deg);
