@@ -11,11 +11,9 @@ body {
 }
 
 .LogoLipe {
-    height: 140px;
+    height: 180px;
     cursor: pointer;
-    transition: all 0.8s ease;
-    left: 10em;
-    /* position: absolute; */
+    transition: all 0.8s ease;    
 }
 
 .LogoLipe:hover {
