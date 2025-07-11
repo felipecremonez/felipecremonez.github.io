@@ -144,7 +144,6 @@ header {
     }
   }
 
-  ---------------------------------------------------------------------------------------------------------------------------------------
 
 .reachMe {
     flex: 1;
@@ -259,9 +258,10 @@ header {
     color: white;
     justify-content: center;
     padding: 2rem;
-    flex-direction: column
+    flex-wrap: wrap;
+    gap: 200px;
 }
-.sectionParceiros h1{
+#parceiros{
     display: flex;
     align-items: center;
     color: white;
@@ -660,5 +660,8 @@ footer {
     .containerProjects{
         display: flex;
         flex-direction: column;
+    }
+    .sectionParceiros{
+        gap:10px;
     }
 }
