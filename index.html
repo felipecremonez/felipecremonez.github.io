@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luís Felipe - Portfólio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./img/logoLipão.png" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            }
+          });
+        });
+        document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+      });
+    </script>
+  </head>
+  <body>
+    <header class="menu">
+      <a href="https://github.com/felipecremonez/" target="_blank">
+        <img src="img/logoLipão.png" alt="Logo Luís Felipe" class="logo" />
+      </a>
+      <nav class="nav">
+        <a href="#about">Sobre Mim</a>
+        <a href="#experiencias">Experiências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#parceiros">Parceiros</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content hidden">
+        <h1>Olá, eu sou <span>Luís Felipe</span></h1>
+        <p>Desenvolvedor Júnior focado em criar experiências web modernas e funcionais.</p>
+        <a href="#contato" class="btn">Entre em contato</a>
+      </div>
+    </section>
+
+    <section id="about" class="about hidden">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <p>Olá, meu nome é Luís Felipe e sou programador Júnior, com desejo de atuar na área e adquirir conhecimento da mesma. Desde que iniciei minha jornada na programação, venho me dedicando a aprimorar minhas habilidades e a entender melhor as diversas nuances que compõem esse vasto campo de estudo.</p>
+        <p>Meu foco principal com este site é aprender e aplicar conhecimentos voltados ao desenvolvimento Web, tais como uso das linguagens de HTML, CSS, Javascript, Java, dentre outras. Atualmente trabalho na FX Sistemas como Suporte Técnico e Developer Júnior.</p>
+      </div>
+    </section>
+
+    <section id="experiencias" class="experiencias hidden">
+      <div class="container">
+        <h2>Experiências</h2>
+        <div class="grid">
+          <div class="card" data-tilt>
+            <img src="img/IconPrefeitura.png" alt="Prefeitura" />
+            <h3>Prefeitura Municipal de Mirandópolis</h3>
+            <p>Estágio em T.I. (04/2022 - 06/2023)</p>
+          </div>
+          <div class="card" data-tilt>
+            <img src="img/fx.svg" alt="FX Sistemas" />
+            <h3>FX Sistemas</h3>
+            <p>Helpdesk / Developer Júnior (10/2023 - Atualmente)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos hidden">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="grid">
+          <div class="card" onclick="window.open('https://felipecremonez.github.io/Finder')">
+            <h3>Finder</h3>
+            <p>Em desenvolvimento</p>
+          </div>
+          <div class="card" onclick="window.open('https://felipecremonez.github.io/newInvest-Copy/#home')">
+            <h3>Investimento Web</h3>
+            <p>Em desenvolvimento</p>
+          </div>
+          <div class="card" onclick="window.open('https://felipecremonez.github.io/MusicDown/html/index.html')">
+            <h3>MusicDown</h3>
+            <p>Em desenvolvimento</p>
+          </div>
+          <div class="card" onclick="window.open('https://felipecremonez.github.io/toDoList//src/page.html')">
+            <h3>To Do List</h3>
+            <p>Em desenvolvimento</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parceiros" class="parceiros hidden">
+      <div class="container">
+        <h2>Parceiros</h2>
+        <div class="grid parceiros-grid">
+          <div class="parceiro" data-tilt>
+            <img src="img/logo180x180FelixNova.png" alt="CSFelix" />
+            <p>CSFelix</p>
+          </div>
+          <div class="parceiro" data-tilt>
+            <img src="img/MM_logo.png" alt="MMaffi" />
+            <p>MMaffi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato hidden">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo para discutir oportunidades de trabalho.</p>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+          <input type="text" name="name" placeholder="Seu Nome" required />
+          <input type="email" name="email" placeholder="Seu E-mail" required />
+          <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+          <input type="hidden" name="accessKey" value="4dbc4305-4573-4410-8922-aa880a77f691" />
+          <input type="hidden" name="redirectTo" value="https://felipecremonez.github.io/thanks.html" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Luís Felipe Cremonez. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
