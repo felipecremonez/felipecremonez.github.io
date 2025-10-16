@@ -105,6 +105,12 @@ section {
   margin: 0 auto;
 }
 
+.parceiro a {
+  text-decoration: none;
+  color: inherit; /* mantém a cor do texto original */
+  display: inline-block; /* permite aplicar efeitos */
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
